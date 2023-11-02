@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 125px;
+  }
+
+  /*---------------------------Navbar------------------------*/
+  
+  .navbar {
+    background-color: rgb(53, 58, 64);
+    height: 115px;
+  
+    .navbar__custom {
+      background-color: rgb(53, 58, 64);
+  
+      .navbar-brand {
+        padding-left: 8rem;
+        font-size: 1.75rem;
+        font-weight: 400;
+      }
+    }
+    .navbar__links {
+      flex-direction: row-reverse;
+  
+      .navbar-nav {
+        padding-right: 8.75rem;
+        font-size: 1.45rem;
+        font-style: bold;
+  
+        & li {
+          margin-right: 0.7rem;
+        }
+      }
+    }
+  }
+
+    /*---------------------------Section Ticket------------------------*/
+
+  .tipo__ticket {
+    margin: 1rem 30rem;
+    padding-top: 10rem;
+
+    .ticket__selection {
+        display: flex;
+        list-style: none;
+
+        & li {
+            border: 1px solid red;
+
+            & a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+  }
+
+
+  .tickets__form {
+    margin: 1rem 30rem;
+  }

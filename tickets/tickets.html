@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="tickets.css" />
+    <title>Tickets</title>
+  </head>
+  <body>
+    <!----------------------------------------Navbar--------------------------------------------------->
+    <nav class="navbar navbar-expand-xxl navbar-dark fixed-top">
+      <div class="container-fluid navbar__custom">
+        <a class="navbar-brand" href="../index.html#home">
+          <img
+            src="/assets/codoacodo.png"
+            alt="Codo-a-codo-Logo"
+            height="80"
+            class="d-inline-block align-text-center"
+          />
+          Conf Bs As
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar__links" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html#home"
+                >La conferencia</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#oradores">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#lugar"
+                >El lugar y la fecha</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#form"
+                >Conviértete en orador</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-success link-active"
+                href="./tickets/tickets.html"
+                >Comprar tickets</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!----------------------------------------Tickets Section---------------------------------------------------->
+
+    <section>
+      <div class="tipo__ticket">
+        <ul class="ticket__selection">
+          <li class="ticket__estudiante">
+            <a href="">
+              <h4>Estudiante</h4>
+              <p>Tiene un descuento</p>
+              <p>80%</p>
+              <p>* presentar documentacion</p>
+            </a>
+          </li>
+          <li class="ticket__trainee">
+            <a href="">
+              <h4>Trainee</h4>
+              <p>Tiene un descuento</p>
+              <p>50%</p>
+              <p>* presentar documentacion</p>
+            </a>
+          </li>
+          <li class="ticket__junior">
+            <a href="">
+              <h4>Junior</h4>
+              <p>Tiene un descuento</p>
+              <p>15%</p>
+              <p>* presentar documentacion</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!----------------------------------------Tickets Form---------------------------------------------------->
+
+    <section class="tickets__form">
+      <h6>VENTA</h6>
+      <h2>VALOR DEL TICKET $200</h2>
+      <div class="formulario__tickets row gx-5">
+        <div class="col mb-4 ps-0">
+          <input
+            type="text"
+            class="form-control fs-5"
+            placeholder="Nombre"
+            aria-label="Nombre"
+            required
+          />
+        </div>
+        <div class="col pe-0">
+          <input
+            type="text"
+            class="form-control fs-5"
+            placeholder="Apellido"
+            aria-label="Apellido"
+            required
+          />
+        </div>
+        <div class="col pe-0">
+          <input
+            type="email"
+            class="form-control fs-5"
+            placeholder="Correo"
+            aria-label="Correo"
+            required
+          />
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Cantidad</label>
+          <input
+            type="number"
+            class="form-control"
+            id="validationCustom05"
+            required
+          />
+        </div>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Categoria</option>
+          <option value="1">Estudiante</option>
+          <option value="2">Trainee</option>
+          <option value="3">Junior</option>
+        </select>
+        <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+            Total a Pagar: $
+          </div>
+        <button type="submit" class="btn col-12 p-2 fs-4">Borrar</button>
+        <button type="submit" class="btn col-12 p-2 fs-4">Resumen</button>
+      </div>
+    </section>
+  </body>
+</html>

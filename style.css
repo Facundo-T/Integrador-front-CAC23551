@@ -9,6 +9,7 @@ html {
   scroll-padding-top: 125px;
 }
 /*---------------------------Navbar------------------------*/
+
 .navbar {
   background-color: rgb(53, 58, 64);
   height: 115px;
@@ -36,6 +37,7 @@ html {
     }
   }
 }
+
 
 /*---------------------------Home----------------------------*/
 .banner__content {
